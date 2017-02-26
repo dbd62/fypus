@@ -1,0 +1,144 @@
+.header{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 50%;
+}
+.head{
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 50%;
+	padding-bottom: 3%;
+}
+#logo{
+	border:0;
+	padding-top: 5%;
+	margin:0;
+}
+#login{
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#name{
+	font-size: 80pt;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.leagueNotification{
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 50pt;
+	padding-top: 3%;
+	padding-bottom:3%;
+	background-color:white;
+	text-align: center;
+}
+h2{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 30pt;
+	color: white;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin:0;
+}
+.form{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+	text-align: center;
+}
+#bullet{
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+}
+ul {
+  float: left;
+}
+li {
+  text-align: left;
+}
+input{
+	border-radius: 25px;
+	padding: 1%;
+	padding-right: 10%;
+	padding-left: 10%;
+}
+h3{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18pt;
+	color: white;
+}
+p{
+	font-size: 12pt;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+}
+#bar{
+	list-style: none;
+	margin: 0 2px;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 5%;
+	padding-bottom:5%;
+	background-color: white;
+}
+a{
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: red;
+	font-size: 18pt;
+}
+	
+#request{
+	font-family: 'Open Sans Condensed', sans-serif;
+	background-color: red;
+	color: white;
+	text-align: center;
+	font-size: 15pt;
+	padding-top: .5%;
+	padding-bottom:.5%;
+	padding-right: 10%;
+	padding-left: 10%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border-radius: 25px;
+}
+.content{
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18pt;
+	padding-top: 3%;
+	padding-bottom:3%;
+}
+.foot{
+	text-align: center;
+	padding-bottom: 5%;
+}
+.background{
+	background-color: #242422;
+}
+#recieved{
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 25pt;
+}
+#number{
+	color: red;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 32pt;
+}
