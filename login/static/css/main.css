@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
+.bgimg {
+    background-image: url('../images/background.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100%;
+}
+
+.middle {
+    position: relative;
+    height: calc(100% - 150px);
+    max-height: 600px;
+    min-height: 245px;
+}
+
+.container {
+	display: flex;
+}
+
+.jumbotron {
+	opacity: 0.9;
+	width: 60%;
+    margin: 0 auto;
+}
+
+.row {
+	margin-bottom: 7px;
+}
+
+.main_cal {
+    height: 100%;
+    position:absolute;
+    top:0;
+    margin: 0 0 0 0;
+}
+
+.buttons {
+	display : flex;
+}
+
+
+.buttons .btn-group {
+	margin: 25px auto -10px auto;
+}
+
+.glyphicon-remove {
+    display: block;
+    float: right;
+    margin-top: -15%;
+    margin-bottom: 5%;
+    margin-right: -19%;
+    font-size: 20px;
+}
+
+.time {
+   height: calc(calc(100%-35px)/36)
+}
+
+.my_event {
+    background-color: pink;
+}
+
+.event {
+    background-color: grey;
+}
+
+.event_popup {
+    width: 60%;
+    height: 104%;
+    display: block;
+    margin: 0 auto;
+    background: white;
+    position: absolute;
+    left: 20%;
+    top:-2%;
+    z-index: 1;
+    border-radius: 10px;
+}

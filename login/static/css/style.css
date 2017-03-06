@@ -1,0 +1,275 @@
+/* CONSTRAINING TO MOBILE APPLICATION SIZE */
+html{
+	/*max-width: 400px;
+	max-height: 773px; */
+	display: block;
+	margin: auto;
+}
+body{
+	margin: 0px 0px 0px 0px;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+}
+#background{
+	background-color: #626D71;
+	width: 100%;
+	height: 100%;
+}
+/* PROFILE.HTML PAGE CSS */
+#profile{
+	background-clip: #EEEFF7
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+ul.nav li {
+    display: inline;
+    padding: 1%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#navBar{
+    font-family: 'Abel', sans-serif;
+    background-color: #EEEFF7;
+    height: 50px;
+    text-align: center;
+    display: table;
+}
+.profile{
+	padding:5%;
+	text-align: center;
+	font-family: 'Abel', sans-serif;
+	background-color: black;
+	
+}
+.profile h3{
+	font-size: 24px;
+	color: #EEEFF7;
+	padding: 0;
+	margin: 0;
+}
+.profile p {
+	font-size: 12px;
+	padding: 0;
+	margin: 0;
+}
+.profile a {
+	color: red;
+}
+.img-circle {
+    background-position: 50%;
+    border-radius: 50%;
+    height: 10%;
+    width: 10%;
+    display: block;
+    margin: auto;
+}
+.leagueAndNotifications{
+	display: inline;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+
+}
+.league{
+	float: left;
+	display: table;
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: #B7B5BA;
+}
+.league a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Abel', sans-serif;
+	font-size: 30px;
+}
+.notifications{
+	float: left;
+	display: table;
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background-color: #B7B5BA;
+}
+.notifications a{
+	text-decoration: none;
+	color: black;
+	font-family: 'Abel', sans-serif;
+	font-size: 30px;
+}
+.img-group {
+    background-position: 50%;
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+    padding: 5%;
+}
+#league{
+	display: inline;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+.group{
+	float: left;
+	display: table;
+	margin: 0 auto;
+	width: 40%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	font-family: 'Abel', sans-serif;
+}
+.groupInfo h3{
+	font-family: 'Abel', sans-serif;
+	font-size: 24px;
+	color: black;
+	text-align: left;
+}
+.groupInfo p{
+	font-family: 'Abel', sans-serif;
+	font-size: 14px;
+	color: black;
+	text-align: left;
+}
+.groupInfo{
+	float: left;
+	display: table;
+	margin: 0 auto;
+	width: 50%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+.arrow{
+	float: left;
+	margin: 0 auto;
+	width: 10%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+}
+.arrowIcon{
+	height: 60%;
+    width: 60%;
+    display: block;
+    margin: auto;
+
+}
+/* JOINREQUEST.HTML */
+.icon{
+	display: block;
+	margin: auto;
+	padding: 5%;
+}
+.tit h3{
+	font-family: 'Abel', sans-serif;
+	font-size: 32px;
+	color: #EEEFF7;
+	text-align: center;
+}
+form{
+	display: block;
+	margin: auto;
+}
+form p{
+	font-family: 'Abel', sans-serif;
+	font-size: 12px;
+	color: #EEEFF7;
+	width: 100%;
+}
+#form{
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	height: 100%;
+	padding-top: 1%;
+	color: #EEEFF7;
+}
+input{
+	border-radius: 25px;
+	padding: 1%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-style: solid;
+	border: none;
+	border-width: 1px;
+	border: 1px solid black;
+	box-sizing: border-box;
+	width: 100%;
+}
+#form button{
+	background-color: #7ABED7;
+	border-radius: 25px;
+	padding: 3%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-style: solid;
+	border: none;
+	border-width: 1px;
+	border: 1px solid #7ABED7;
+	display: block;
+	margin: auto;
+	color: #EEEFF7;
+	width: 100%;
+}
+.footer p{
+	font-family: 'Abel', sans-serif;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+	color: #EEEFF7;
+}
+.footer a{
+	color: #7ABED7;
+}
+
+/* INDEX.HTML CSS */
+.info li{
+	font-size: 16px;
+	color: #EEEFF7;
+}
+.header{
+	font-family: 'Abel', sans-serif;
+	width: 50%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	color: #EEEFF7;
+}
+.header h2{
+	text-align: center;
+	font-size: 20pt;
+	color: #EEEFF7;
+}
+.header p{
+	text-align: center;
+	font-size: 16pt;
+	color: #EEEFF7;
+}
+.footer{
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+.footer button{
+	background-color: #7ABED7;
+	border-radius: 25px;
+	padding: 2%;
+	border-style: solid;
+	border: none;
+	border-width: 1px;
+	border: 1px solid #7ABED7;
+	display: block;
+	margin: auto;
+	color: #EEEFF7;
+	width: 80%;
+}
