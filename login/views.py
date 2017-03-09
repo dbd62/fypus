@@ -59,8 +59,7 @@ def home(request):
     request,
     'home.html',
     {
-        'user': UserProfile.objects.get(user=request.user).first_name,
-        'events': Reservation.objects.all().filter(owner=UserProfile.objects.get(user=request.user))
+        'user': UserProfile.objects.get(user=request.user).first_name
     }
     )
 
@@ -68,7 +67,6 @@ def events(request):
     print (request.user)
     to_return = {}
     to_return['events'] = []
-    events = Reservation.objects.all() # .filter(owner=UserProfile.objects.get(user=request.user))
     user_profile = UserProfile.objects.get(user=request.user);
     for event in events:
         l = []
