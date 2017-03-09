@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'polls'
 ]
 
 MIDDLEWARE = [
@@ -88,8 +87,8 @@ DATABASES = {
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'suganyasankaran91@gmail.com'
-EMAIL_HOST_PASSWORD = 'suganyasankaran91'
+EMAIL_HOST_USER = 'dbd62@cornell.edu'
+EMAIL_HOST_PASSWORD = 'bullis#18'
 EMAIL_PORT = 587
 
 # Password validation

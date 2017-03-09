@@ -28,8 +28,8 @@ def register(request):
             send_mail(
             'New User Request',
             message,
-            'suganyasankaran91@gmail.com',
-            ['suganyasankaran91@gmail.com'],
+            'dbd62@cornell.edu',
+            ['dbd62@cornell.edu'],
             fail_silently=False,
             )
             return HttpResponseRedirect('/register/success/')
