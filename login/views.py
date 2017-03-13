@@ -1,17 +1,12 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
-
 from django.http import JsonResponse
 from django.http import HttpResponse
-
 import json
-
 from login.forms import *
 from login.models import *
-
 from time import strftime
 import datetime
-
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.views.decorators.csrf import csrf_protect
@@ -28,11 +23,11 @@ def register(request):
             send_mail(
             'New User Request',
             message,
-            'dbd62@cornell.edu',
-            ['dbd62@cornell.edu'],
+            'ss3629@cornell.edu',
+            ['ss3629@cornell.edu'],
             fail_silently=False,
             )
-            return HttpResponseRedirect('/register/success/')
+            return HttpResponseRedirect('/registration/success.html')
     else:
         form = RegistrationForm()
     variables = RequestContext(request, {
@@ -43,16 +38,10 @@ def register(request):
     'registration/register.html',
     { 'form': form },
     )
-
-def register_success(request):
+def login(request):
     return render(request,
-    'registration/success.html',
+    'login.html',
     )
-
-def logout_page(request):
-    logout(request)
-    return HttpResponseRedirect('/')
-
 @login_required
 def home(request):
     return render(
@@ -82,13 +71,29 @@ def events(request):
             to_return['events'].append({'date': event.start_time.strftime("%Y-%m-%d"), 'time_array': time_array, 'show_class': "event", 'event_id': event.id })
         print (to_return)
     return JsonResponse(to_return)
+def base(request):
+    return render(request,
+    'index.html',
+    )
 def fypusRequest(request):
     return render(request,
     'fypusRequest.html',
     )
+def fypusRequestYou(request):
+    return render(request,
+    'fypusRequestYou.html',
+    )
+def home(request):
+    return render(request,
+    'home.html',
+    )
 def index(request):
     return render(request,
     'index.html',
+    )
+def join(request):
+    return render(request,
+    'join.html',
     )
 def joinRequest(request):
     return render(request,
@@ -98,11 +103,22 @@ def profile(request):
     return render(request,
     'profile.html',
     )
+def recruitOthers(request):
+    return render(request,
+    'recruitOthers.html',
+    )
 def requestRecieved(request):
     return render(request,
     'requestRecieved.html',
     )
-def yourSavings(request):
+def requestToJoin(request):
     return render(request,
+    'requestToJoin.html',
+    )
+def yourSavings(request):
+    return renzder(request,
     'yourSavings.html',
     )
+def logout_page(request):
+    logout(request)
+    return HttpResponseRedirect('/')
