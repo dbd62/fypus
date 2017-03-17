@@ -7,7 +7,7 @@
 	<link rel = "{% static "css/font-awesome-4.7.0.css" %}" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	
 	<div class = "global nav">
-		<img id = "logo" src = "img/logo.png" alt="Fypus logo">
+		<img id = "logo" src="{% static "images/logo2.png" %}" alt="Fypus logo">
 			<ul>	
 	<div class="list-group" style="float: right; padding-top: 20px; padding-right: 20px;">
   		<a class="list-group-item" href="#" style="color: #383A35; text-decoration: none; font-family: sans-serif;"><i class="fa fa-search fa-fw" aria-hidden="true""></i>&nbsp; Search</a>
@@ -35,6 +35,8 @@
 	        <input type="text" name="businessName" size="20%"/>
 	      <p> Business Email </p>
 	        <input type="email" name="businessEmail" size="20%"/>
+	      <p> Password </p>
+	      	<input type="password" name="fypuspassword" size="20%"/>
 	      <br> <br> <br>
 	      <button id="request" type="submit" name="submit">Request to join</button>
 	    </form>
