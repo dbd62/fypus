@@ -28,16 +28,18 @@
     	<h2> Recruit Members </h2> 
   	</div>
   	<div id="form">
-	    <form>
-	      <p> Name </p>
-	        <input type="text" name="name" size="20%"/>
-	      <p> Business Email </p>
-	        <input type="email" name="businessEmail" size="20%"/>
-	      <p> Cellphone Number </p>
-	      	<input type="text" name="businessEmail" size="20%"/>
-	      <br> <br> <br>
-	      <button id="request" type="submit" name="submit">Recruit Members</button>
-	    </form>
+	    <div id="content">
+	    	<input type="text" placeholder="name" class="adding"/>
+	    	<input type="email" placeholder="email" class="adding"/>
+	    </div>
+	    <br>
+	    <input type="button" id="addField" onclick="addField();" value="Add Recruit"/>
+	    <input type="button" name="submit" value="Recruit">
+	    <script>
+	    function addField(){
+	    	document.getElementById('content').innerHTML+='<br><br><input type="text" placeholder="name"/><input type="email" placeholder="email"/>';
+	    }
+	    </script>
   	</div>
 </body>
 </div>
