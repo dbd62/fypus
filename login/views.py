@@ -116,8 +116,28 @@ def requestToJoin(request):
     'requestToJoin.html',
     )
 def yourSavings(request):
-    return renzder(request,
+    return render(request,
     'yourSavings.html',
+    )
+def Search(request):
+    return render(request,
+    'Search.html',
+    )
+def help(request):
+    return render(request,
+    'help.html',
+    )
+def Recruit2(request):
+    return render(request,
+    'Recruit2.html',
+    )
+def NewLeague(request):
+    return render(request,
+    'NewLeague.html',
+    )
+def AddLeague(request):
+    return render(request,
+    'AddLeague.html',
     )
 def logout_page(request):
     logout(request)

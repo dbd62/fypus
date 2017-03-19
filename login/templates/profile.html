@@ -1,54 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>withFypus</title>
-    {% load static %}
+  <title>Fypus Home</title>
+  {% load static %}
   <link href="{% static "css/styles.css" %}" rel="stylesheet">
   <link rel = "{% static "css/font-awesome-4.7.0.css" %}" href="font-awesome-4.7.0/css/font-awesome.min.css">
-  <script src="jsp/main.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    
+    <a href="/index/"><img id = "logo" src="{% static "images/logo2.png" %}" alt="Fypus logo"></a>
+  <div class="list-group" style="float: right; padding-top: 20px; padding-right: 20px;">
+      <a class="list-group-item" href="/Search/" style="color: #383A35; text-decoration: none; font-family: 'Abel', sans-serif;"><i class="fa fa-search fa-fw" aria-hidden="true""></i>&nbsp; Search</a>
+
+      <a class="list-group-item" href="/profile/" style="color: #383A35; text-decoration: none;font-family: 'Abel', sans-serif;"><i class="fa fa-user fa-fw" aria-hidden="true"></i>&nbsp; Dashboard&nbsp;&nbsp;</a>
+
+      <a class="list-group-item" href="/Recruit2/" style="color: #383A35; text-decoration: none;font-family: 'Abel', sans-serif;"><i class="fa fa-user-plus fa-fw" aria-hidden="true"></i>&nbsp; Recuit&nbsp;&nbsp;</a>
+
+      <a class="list-group-item" href="/NewLeague/" style="color: #383A35; text-decoration: none;font-family: 'Abel', sans-serif;"><i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>&nbsp; New League&nbsp;&nbsp;</a>
+
+      <a class="list-group-item" href="#" style="color: #383A35; text-decoration: none;font-family: 'Abel', sans-serif;"><i class="fa fa-commenting fa-fw" aria-hidden="true"></i>&nbsp; Message&nbsp;&nbsp;</a>
+
+      <a class="list-group-item" href="/help/" style="color: #383A35; text-decoration: none;font-family: 'Abel', sans-serif;"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i>&nbsp; Help&nbsp;&nbsp;</a>
+
+      <a class="list-group-item" href="/login/" style="color: #383A35; text-decoration: none;font-family: 'Abel', sans-serif;"><i class="fa fa-question-circle fa-fw" aria-hidden="true"></i>&nbsp; Login&nbsp;&nbsp;</a>
+  </div>
 </head>
-<body>
-  <header class="head">
-      <div id="navBar">
-            <ul class="nav">
-              <li><a href="#profile" title=""><img src="img/profile.png"><span>Profile</span></a></li>
-              <li><a href="#recruite" title=""><img src="img/recruit.png"><span>Recruit</span></a></li>
-              <li><a href="#search" title=""><img src="img/search.png"><span>Search</span></a></li>
-              <li><a href="#addGroup" title=""><img src="img/addGroup.png"><span>Add Group</span></a></li>
-              <li><a href="#help" title=""><img src="img/help.png"><span>Help</span></a></li>
-              <li><a href="#messenger" title=""><img src="img/messenger.png"><span>Messenger</span></a></li>
-            </ul>
-      </div>
-  </header>
-  <div class="profile">
-      <img src="img/headshot.jpg" class="img-circle" alt="headshot">
-      <h3> Dana Daniels </h3>
-      <p> <a href="http://infosci.cornell.edu/academics/mps">MPS Student</a> </p>
+<br>
+<br>
+<br>
+<br>
+<hr noshade style="border-top: 0px; width: 100%;border-color: #D7D8D7;display: block;margin: auto;">
+<body>  
+  <div class = "container">
+    <h3> Name </h3>
+    <p> Company </p>
   </div>
-  <div class="leagueAndNotifications">
-      <div class="league">
-          <a href="#league">League</a>
-      </div>
-      <div class="notifications">
-          <a href="#notifications">Notifications</a>
-      </div>
+  
+  <div class="switch">
+    <input type="button" class="leagues" name="submit" value="Leagues">
+    <input type="button" class="notifications" name="submit" value="Notifications">
   </div>
-  <div id="league">
-      <div class="group">
-        <img src="img/groupIcon.jpg" class="img-group" alt="groupIcon">
-      </div>
-      <div class="groupInfo">
-        <h3> Group Name </h3>
-        <p> ___ Members </p>
-        <p> Total saved: ____ </p>
-      </div>
-      <div class="arrow">
-        <img src="img/nextIcon.png" class="arrowIcon" alt="arrowIcon">
-      </div>
+
+  <div id="footer">
+<p style="font-family: 'Abel', sans-serif; text-align: center;padding-top: 20%;">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support</p>
+        
   </div>
-  <div id="notifications">
-  </div>
+
 </body>
 </html>
