@@ -1,11 +1,8 @@
 from __future__ import unicode_literals
-
 from django.db import models
 from django.contrib.auth.models import User
 
 from time import strftime
-
-# Create your models here.
 
 class UserProfile(models.Model):
     # This line is required. Links UserProfile to a User model instance.
@@ -26,6 +23,19 @@ class UserProfile(models.Model):
 class FeeType(models.Model):
 	fee_type = models.CharField(blank=True, max_length=15)
 	amount = models.IntegerField()
+
+class Pending(models.Model):
+    name = models.CharField(blank=True, max_length=100)
+    business_email = models.CharField(blank=True, max_length=100)
+    business_company = models.CharField(blank=True, max_length=100)
+    password = models.CharField(blank=True, max_length=100)
+
+class User(models.Model):
+    name = models.CharField(blank=True, max_length=100)
+    business_email = models.CharField(blank=True, max_length=100)
+    business_company = models.CharField(blank=True, max_length=100)
+    password = models.CharField(blank=True, max_length=100)
+    leagues = models.CharField(blank=True, max_length=100)
 
 class Payment(models.Model):
 	user = models.OneToOneField(UserProfile)
