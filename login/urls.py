@@ -25,4 +25,6 @@ urlpatterns = [
     url(r'^Recruit2/$', views.Recruit2),
     url(r'^NewLeague/$', views.NewLeague),
     url(r'^AddLeague/$', views.AddLeague),
+    url(r'^messages/$', views.messages),
+    url(r'^navBar/$', views.navBar),
 ]
