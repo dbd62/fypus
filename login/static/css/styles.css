@@ -6,7 +6,6 @@ a:hover {
 .list-group-item{
 	float: right;
 	padding-left: 3%;
-	font-family: helvetica;
 	color: #383A35;
 	text-decoration: none;
 	font-family: 'Abel', sans-serif;
@@ -17,6 +16,7 @@ a:hover {
 	margin: auto;
 	width: 100%;
 	vertical-align: middle;
+	padding-bottom: 5%;
 
 }
 .navLogo{
@@ -28,6 +28,7 @@ a:hover {
 	padding-top: 1%;
 	vertical-align: middle;
 	padding-left: 5%;
+	padding-top: inherit;
 }
 .links{
 	padding-right: 2%;
@@ -36,11 +37,59 @@ a:hover {
 	padding-top: inherit;
 }
 
+
 /*CSS FOR PAGES*/
+.image{
+	height: 100%;
+	width: 60%;
+	float: left;
+}
+.rightContent{
+	height: 100%;
+	width: 40%;
+	float: right;
+	font-family: 'Abel', sans-serif;
+}
+.rightContent h2 {
+	font-family: 'Abel', sans-serif;
+	padding-top: 10%;
+}
+.rightContent ul{
+	font-family: 'Abel', sans-serif; 
+	line-height: 2em; 
+	list-style-type: square; 
+	list-style-position: inside;
+}
+.rightContent .button{
+	background-color: #FF4338;
+	border-radius: 25px;
+	padding: 3%;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-style: solid;
+	border: none;
+	border-width: 1px;
+	border: 1px solid #FF4338;
+	margin: auto;
+	color: white;
+	width: 50%; 
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+}
+#iphone{
+	float: left; 
+	width: 55%; 
+	height: 60%;
+	padding-top: 7%; 
+	padding-right: 15%; 
+	padding-left: 15%;
+}
 .container h2{
 	text-align: center;
 	font-size: 36px;
 	padding-top: 2%;
+	padding-bottom: 4%;
 	font-family: 'Abel', sans-serif;
 }
 .container h3{
@@ -84,8 +133,15 @@ form{
 
 form p{
 	font-family: 'Abel', sans-serif;
-	font-size: 12px;
+	font-size: 12pt;
 	color: #FF4338;
+	width: 100%;
+}
+#form h3{
+	font-family: 'Abel', sans-serif;
+	font-size: 18pt;
+	text-align: left;
+	color: black;
 	width: 100%;
 }
 #form{
@@ -93,8 +149,11 @@ form p{
 	margin-right: auto;
 	width: 50%;
 	height: 100%;
-	padding-top: 1%;
 	color: #EEEFF7;
+}
+#form textarea{
+	width: 100%;
+	margin: auto;
 }
 input{
 	border-radius: 25px;
@@ -181,9 +240,7 @@ input{
 	padding-top: 7%;
 }
 
-
 .button{
-	button{
 	background-color: #FF4338;
 	border-radius: 25px;
 	padding: 3%;
@@ -198,9 +255,53 @@ input{
 	color: white;
 	width: 100%;
 }
+
 #footer{
-	padding-top: 20%;
 	display: block;
 	margin: auto;
+}
+#footer .footer-item{
+	font-family: 'Abel', sans-serif; 
+	padding-left: 3%;
+	color: #383A35;
+	text-decoration: none;
+	font-family: 'Abel', sans-serif;
+}
 
+/*CSS MOBILE*/
+@media screen and (max-width: 660px){
+	.navLogo{
+		display: block;
+		float: none;
+		padding-bottom: 2%;
+		width: 50%;
+	}
+	.links{
+		width: 100%;
+		display: block;
+		margin: auto;
+		float: none;
+	}
+	.list-group-item{
+		float: none;
+		padding-left: none;
+		display: block;
+	}
+	.list-group{
+		padding-bottom: 7%;
+	}
+	.image{
+		display: none;
+	}
+	.rightContent{
+		width: 50%;
+		display: block;
+		margin: auto;
+		float: none;
+		align-content: center;
+		text-align: left;
+	}
+	.rightContent .button{
+		width: 100%;
+	}
 }
