@@ -139,6 +139,14 @@ def AddLeague(request):
     return render(request,
     'AddLeague.html',
     )
+def messages(request):
+    return render(request,
+    'messages.html',
+    )
+def navBar(request):
+    return render(request,
+    'navBar.html',
+    )
 def logout_page(request):
     logout(request)
     return HttpResponseRedirect('/')
