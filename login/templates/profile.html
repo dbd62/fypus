@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fypus Profile</title>
+  {% load static %}
+  <link href="{% static "css/styles.css" %}" rel="stylesheet">
+  <link rel = "{% static "css/font-awesome-4.7.0.css" %}" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    /* Style the tab */
+div.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 50%;
+    margin: auto;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    margin: auto;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #FF4338;
+    color: #ffffff;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+hr {
+  color: 
+}
+p {
+  font-family: sans-serif;
+  font-size: 0.75em;
+  font-weight: lighter;
+  margin: auto;
+  line-height: 1.5em;
+}
+
+
+  </style>
+    
+ 
+  <div class="list-group">
+    <div class="navLogo">
+      <a href="/index/"><img id = "logo" src="{% static "images/logo2.png" %}" alt="Fypus logo"></a>
+    </div>
+    <div class="links">
+        <a class="list-group-item" href="/Search/">Search</a>
+        <a class="list-group-item" href="/profile/">Dashboard</a>
+        <a class="list-group-item" href="/Recruit2/">Recuit</a>
+        <a class="list-group-item" href="/NewLeague/">New League</a>
+        <a class="list-group-item" href="/messages/">Message</a>
+        <a class="list-group-item" href="/help/">Help</a>
+        <a class="list-group-item" href="/login/">Login</a>
+      </div>
+    </div>
+</head>
+<hr noshade style="border-top: 0px; width: 100%;border-color: #D7D8D7;display: block;margin: auto;">
+<body>  
+  <div style="width: 100%; height: 50%; background-color: #474F54; margin: auto;">
+    <img src="{% static "images/Small-business-owner1.png" %}" alt = "Small business owner profile image" style="display: block; margin: auto; width: 7%; padding-top: 10px; padding-bottom: 10px;">
+    <p style="color: #ffffff; margin: auto; text-align:center; font-family: sans-serif;">Mary Kay</p>
+    <p style="color: #ffffff; margin: auto; text-align:center; font-family: sans-serif; padding-bottom: 10px;">Gimme Coffee Co.</p>
+
+  </div>
+<br>
+<br>
+  
+<div class="tab">
+  <button style="width: 50%;" class="tablinks" onclick="openCity(event, 'Leagues')">Leagues</button>
+  <button style = "width: 50%;" class="tablinks" onclick="openCity(event, 'Notifications')">Notifications</button>
+</div>
+
+<div id="Leagues" class="tabcontent" style="width: 48.4%; margin: auto;">
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum league.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum league.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum league.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum league.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum league.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum league.</p>
+
+</div>
+
+<div id="Notifications" class="tabcontent" style="width: 48.4%; margin: auto;">
+ 
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum notification.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum notification.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum notification.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum notification.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum notification.</p>
+  <hr>
+  <p style="font-family: sans-serif; padding-top: 10px; padding-bottom: 10px;">Lorem ipsum notification.</p>
+
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+  <div id="footer">
+<p style="font-family: 'Abel', sans-serif; text-align: center;padding-top: 20%;">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support</p>
+        
+  </div>
+
+</body>
+</html>
