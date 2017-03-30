@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fypus Home</title>
+	{% load static %}
+	<link href="{% static "css/styles.css" %}" rel="stylesheet">
+	<link rel = "{% static "css/font-awesome-4.7.0.css" %}" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+	<div class="list-group">
+		<div class="navLogo">
+			<a href="/index/"><img id = "logo" src="{% static "images/logo2.png" %}" alt="Fypus logo"></a>
+		</div>
+		<div class="links">
+	      <a class="list-group-item" href="/Search/">Search</a>
+	      <a class="list-group-item" href="/profile/">Dashboard</a>
+	      <a class="list-group-item" href="/Recruit2/">Recuit</a>
+	      <a class="list-group-item" href="/NewLeague/">New League</a>
+	      <a class="list-group-item" href="/messages/">Message</a>
+	      <a class="list-group-item" href="/help/">Help</a>
+	      <a class="list-group-item" href="/login/">Login</a>
+	    </div>
+  	</div>
+</head>
+<hr noshade style="border-top: 0px; width: 100%;border-color: #D7D8D7;display: block;margin: auto;">
+<body>
+	<div>	
+	<div class="image">
+		<img id = "iphone" src="{% static "images/iphone_mockup.png" %}" alt = "Fypus web app on iphone">
+	</div>
+	<div class= "rightContent">
+		<h2>Ally with your own network to secure:</h2>
+		<ul>
+			<li>Economies of Scale</li>
+			<li>Lower Prices</li>
+			<li>Greater Negotiating Power</li>
+		</ul>
+		<p>Small business owners who want to level the playing field together, join now.</p>
+		<br>
+		<div class="buttons">
+            <a class="button" href="/RequestToJoin/" role="button">Request to Join</a>
+    	</div>
+	</div>
+    </div>
+</body>
+</html>
