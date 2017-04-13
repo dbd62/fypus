@@ -22,16 +22,16 @@
   	</div>
 </head>
 <hr noshade style="border-top: 0px; width: 100%;border-color: #D7D8D7;display: block;margin: auto;">
-<body>	
+<body>
 	<div class = "container">
-    	<h2> Log into Fypus </h2> 
+    	<h2> Log into Fypus </h2>
   	</div>
   	<div id="form">
 	    <form>
-	      <p> Business Email </p>
-	        <input type="email" name="businessEmail" size="20%"/>
-	      <p> Password </p>
-	      	<input type="Password" name="Password" size="20%"/>
+				<p> Business Email </p>
+				 <div class="col-md-6">{{ Pending.business_email }}</div>
+			 <p> Password </p>
+				 <div class="col-md-6">{{ Pending.password }}</div>
 	      <br> <br> <br>
 	      <button id="request" type="submit" name="submit">Login</button>
 	    </form>
@@ -39,10 +39,8 @@
 </body>
 </div>
 </html>
-	<div id="footer">
+<div id="footer">
 <p style="font-family: 'Abel', sans-serif; text-align: center;padding-top: 20%;">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support</p>
-        
-  </div>
-
+</div>
 </body>
 </html>

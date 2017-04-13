@@ -22,31 +22,26 @@
   	</div>
 </head>
 <hr noshade style="border-top: 0px; width: 100%;border-color: #D7D8D7;display: block;margin: auto;">
-<body>	
+<body>
 	<div class = "container">
-    	<h2> Join Fypus </h2> 
+    	<h2> Join Fypus </h2>
   	</div>
   	<div id="form">
 	    <form>
 	      <p> Name </p>
-	        <input type="text" name="name" size="20%"/>
+	        <div class="col-md-6">{{ UserProfile.first_name }}</div>
 	      <p> Business Name </p>
-	        <input type="text" name="businessName" size="20%"/>
+	        <div class="col-md-6">{{ Pending.name }}</div>
 	      <p> Business Email </p>
-	        <input type="email" name="businessEmail" size="20%"/>
+	        <div class="col-md-6">{{ Pending.business_email }}</div>
 	      <p> Password </p>
-	      	<input type="password" name="fypuspassword" size="20%"/>
+	      	<div class="col-md-6">{{ Pending.password }}</div>
 	      <br> <br> <br>
 	      <button id="request" type="submit" name="submit">Request to join</button>
 	    </form>
   	</div>
-</body>
-</div>
-</html>
-	<div id="footer">
+<div id="footer">
 <p style="font-family: 'Abel', sans-serif; text-align: center;padding-top: 20%;">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support</p>
-        
-  </div>
-
+</div>
 </body>
 </html>

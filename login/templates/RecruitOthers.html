@@ -22,16 +22,16 @@
   	</div>
 </head>
 <hr noshade style="border-top: 0px; width: 100%;border-color: #D7D8D7;display: block;margin: auto;">
-<body>	
+<body>
 	<div class = "container">
-    	<h2> Recruit Members </h2> 
+    	<h2> Recruit Members </h2>
   	</div>
   	<!-- http://jsfiddle.net/2t9Dh/ -->
   	<div id="form">
-	    <div id="fields">
-	    	<input type="text" placeholder="name" class="adding" size="20%"/>
-	    	<input type="email" placeholder="email" class="adding" size="20%"/>
-	    </div>
+			<p> Business Name </p>
+				<div class="col-md-6">{{ Pending.name }}</div>
+			<p> Business Email </p>
+				<div class="col-md-6">{{ Pending.business_email }}</div>
 	    <br>
 	    <span class="recruit">
 	    <input type="button" id="addField" onclick="addField();" value="Add Recruit"/>
@@ -47,10 +47,8 @@
 </body>
 </div>
 </html>
-	<div id="footer">
+<div id="footer">
 <p style="font-family: 'Abel', sans-serif; text-align: center;padding-top: 20%;">About Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terms&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Policy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Privacy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support</p>
-        
-  </div>
-
+</div>
 </body>
 </html>

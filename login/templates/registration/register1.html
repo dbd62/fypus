@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}User Registration{% endblock %}
+{% block head %}User Registration{% endblock %}
+{% block content %}
+  <div class="container">
+    <div class="jumbotron col-md-2 col-md-offset-3">
+      <form method="post" action=".">
+        {% csrf_token %}
+        <a class="glyphicon glyphicon-remove" href="/"></a>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="email">Email:</label>
+          </div>
+          <div class="col-md-4">
+            {{ form.email }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="email">Password:</label>
+          </div>
+          <div class="col-md-4">
+            {{ form.password1 }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <label for="email">Password (Again):</label>
+          </div>
+          <div class="col-md-4">
+            {{ form.password2 }}
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="btn-group">
+            <!--<a class="btn btn-lg btn-default" role="button" href="/">Back</a>-->
+            <input type="submit" class="btn btn-lg btn-success" value="Request Account" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+{% endblock %}

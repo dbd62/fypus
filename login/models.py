@@ -1,13 +1,11 @@
 from __future__ import unicode_literals
 from django.db import models
 from django.contrib.auth.models import User
-
 from time import strftime
 
 class UserProfile(models.Model):
     # This line is required. Links UserProfile to a User model instance.
     user = models.OneToOneField(User)
-
     # The additional attributes we wish to include.
     first_name = models.CharField(blank=True, max_length=100)
     last_name = models.CharField(blank=True, max_length=100)
@@ -25,8 +23,8 @@ class FeeType(models.Model):
 	amount = models.IntegerField()
 
 class Pending(models.Model):
-    name = models.CharField(blank=True, max_length=100)
-    business_email = models.CharField(blank=True, max_length=100)
+    name = models.OneToOneField(User)
+    business_email = models.OneToOneField(User)
     business_company = models.CharField(blank=True, max_length=100)
     password = models.CharField(blank=True, max_length=100)
 
